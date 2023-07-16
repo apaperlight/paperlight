@@ -1,0 +1,26 @@
+2023-07-16 10:58:43,753 INFO [dump-task] add task. groupKey=mysql-dev.yml+DEFAULT_GROUP, taskKey=mysql-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:07:29,675 INFO [dump-task] add task. groupKey=borrowservice-dev.yml+DEFAULT_GROUP, taskKey=borrowservice-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:12:26,099 INFO [dump-task] add task. groupKey=bookservice-dev+DEFAULT_GROUP, taskKey=bookservice-dev+DEFAULT_GROUP++false+null
+
+2023-07-16 11:20:22,998 INFO [dump-task] add task. groupKey=bookservice-dev+DEFAULT_GROUP, taskKey=bookservice-dev+DEFAULT_GROUP++false+null
+
+2023-07-16 11:21:11,530 INFO [dump-task] add task. groupKey=bookservice-dev.yml+DEFAULT_GROUP, taskKey=bookservice-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:21:37,307 INFO [dump-task] add task. groupKey=mysql-dev.yml+DEFAULT_GROUP, taskKey=mysql-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:21:44,402 INFO [dump-task] add task. groupKey=mysql-dev.yml+DEFAULT_GROUP, taskKey=mysql-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:21:44,426 WARN [dump-ignore] ignore to save cache file. groupKey=mysql-dev.yml+DEFAULT_GROUP, md5=288a273fb541fdf354c4b2cf26930d12, lastModifiedOld=1689477697291, lastModifiedNew=1689477704396
+
+2023-07-16 11:24:23,372 INFO [dump-task] add task. groupKey=mysql-dev.yml+DEFAULT_GROUP, taskKey=mysql-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:25:09,826 INFO [dump-task] add task. groupKey=mysql-dev.yml+DEFAULT_GROUP, taskKey=mysql-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:26:28,301 INFO [dump-task] add task. groupKey=bookservice-dev.yml+DEFAULT_GROUP, taskKey=bookservice-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:31:46,019 INFO [dump-task] add task. groupKey=bookservice-dev.yml+DEFAULT_GROUP, taskKey=bookservice-dev.yml+DEFAULT_GROUP++false+null
+
+2023-07-16 11:33:47,323 INFO [dump-task] add task. groupKey=bookservice-dev.yml+DEFAULT_GROUP, taskKey=bookservice-dev.yml+DEFAULT_GROUP++false+null
+

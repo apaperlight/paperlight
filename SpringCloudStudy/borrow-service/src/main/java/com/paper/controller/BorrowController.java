@@ -5,6 +5,8 @@ import com.paper.entity.Borrow;
 import com.paper.entity.BorrowDetail;
 import com.paper.entity.User;
 import com.paper.service.BorrowService;
+import com.paper.service.client.BookClient;
+import com.paper.service.client.UserClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,12 +22,16 @@ import java.util.stream.Collectors;
 public class BorrowController {
     @Resource
     BorrowService borrowService;
+    @Resource
+    UserClient userClient;
+    @Resource
+    BookClient bookClient;
     @GetMapping("/{uid}")
     public BorrowDetail getBorrowByUid(@PathVariable Long uid){
         RestTemplate restTemplate = new RestTemplate();
-        User user = restTemplate.getForObject("http://localhost:8101/user/" + uid, User.class);
+        User user = userClient.getUserById(uid);
         List<Borrow> list = borrowService.getUserBorrow(uid);
-        List<Book> bookList = list.stream().map(b -> restTemplate.getForObject("http://localhost:8301/book/" + b.getBid(), Book.class)).collect(Collectors.toList());
+        List<Book> bookList = list.stream().map(b -> bookClient.getBookByBid(b.getBid())).collect(Collectors.toList());
         return new BorrowDetail(user,bookList);
     }
 }
