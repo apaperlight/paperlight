@@ -43,7 +43,7 @@ public class SecutityConfiguration extends WebSecurityConfigurerAdapter {
     @Bean
     public JwtAccessTokenConverter tokenConverter(){  //Token转换器，将其转换为JWT
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        converter.setSigningKey("lbwnb");   //这个是对称密钥，一会资源服务器那边也要指定为这个
+        converter.setSigningKey("paper");   //这个是对称密钥，一会资源服务器那边也要指定为这个
         return converter;
     }
 

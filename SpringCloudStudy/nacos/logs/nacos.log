@@ -1014,3 +1014,15 @@ Caused by: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
 
 2023-07-17 17:16:07,027 WARN clearConfigHistory start
 
+2023-07-17 17:26:06,823 INFO [capacityManagement] start correct usage
+
+2023-07-17 17:26:06,823 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 17:26:07,041 WARN clearConfigHistory start
+
+2023-07-17 17:36:06,829 INFO [capacityManagement] start correct usage
+
+2023-07-17 17:36:06,830 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 17:36:07,046 WARN clearConfigHistory start
+

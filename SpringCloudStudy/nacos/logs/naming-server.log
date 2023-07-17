@@ -538,3 +538,41 @@
 
 2023-07-17 17:12:19,916 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8201#DEFAULT#DEFAULT_GROUP@@borrowservice","ip":"192.168.0.108","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689585139916,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
 
+2023-07-17 17:26:11,628 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8101#DEFAULT#DEFAULT_GROUP@@userservice","ip":"192.168.0.108","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689585966838,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-17 17:26:11,645 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userservice, value: {"instanceList":[]}
+
+2023-07-17 17:26:18,608 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8101#DEFAULT#DEFAULT_GROUP@@userservice","ip":"192.168.0.108","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689585978608,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-17 17:26:22,176 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookservice, value: {"instanceList":[]}
+
+2023-07-17 17:26:24,423 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@userservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8101#DEFAULT#DEFAULT_GROUP@@userservice","ip":"192.168.0.108","port":8101,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689585983612,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.0.108#8102#DEFAULT#DEFAULT_GROUP@@userservice","ip":"192.168.0.108","port":8102,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@userservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689585984423,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-17 17:26:31,946 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@bookservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8301#DEFAULT#DEFAULT_GROUP@@bookservice","ip":"192.168.0.108","port":8301,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@bookservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689585991946,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-17 17:26:34,202 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[]}
+
+2023-07-17 17:26:38,236 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:30:49,016 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:30:49,044 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8201#DEFAULT#DEFAULT_GROUP@@borrowservice","ip":"192.168.0.108","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689586249044,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-17 17:33:25,683 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[]}
+
+2023-07-17 17:33:30,155 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:33:30,202 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:33:39,107 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:33:39,131 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8201#DEFAULT#DEFAULT_GROUP@@borrowservice","ip":"192.168.0.108","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689586419131,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+
+2023-07-17 17:38:04,804 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[]}
+
+2023-07-17 17:38:09,053 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:38:17,193 WARN protect threshold reached, return all ips, service: DEFAULT_GROUP@@borrowservice
+
+2023-07-17 17:38:17,223 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@borrowservice, value: {"instanceList":[{"instanceId":"192.168.0.108#8201#DEFAULT#DEFAULT_GROUP@@borrowservice","ip":"192.168.0.108","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@borrowservice","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689586697223,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000}]}
+

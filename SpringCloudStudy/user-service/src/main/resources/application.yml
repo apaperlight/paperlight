@@ -17,8 +17,6 @@ spring:
         dashboard: localhost:8900
 security:
   oauth2:
-    client:
-      client-id: web
-      client-secret: 654321
     resource:
-      token-info-uri: http://localhost:8888/sso/oauth/check_token
+      jwt:
+        key-value: paper #注意这里要跟验证服务器的密钥一致，这样算出来的签名才会一致

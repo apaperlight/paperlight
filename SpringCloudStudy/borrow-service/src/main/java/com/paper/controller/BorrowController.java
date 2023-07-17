@@ -27,8 +27,8 @@ public class BorrowController {
     UserClient userClient;
     @Resource
     BookClient bookClient;
-    @Resource
-    OAuth2RestTemplate template;
+//    @Resource
+//    OAuth2RestTemplate template;
     @GetMapping("/feign/{uid}")
     public BorrowDetail getBorrowByUid(@PathVariable Long uid){
         User user = userClient.getUserById(uid);
@@ -36,11 +36,11 @@ public class BorrowController {
         List<Book> bookList = list.stream().map(b -> bookClient.getBookByBid(b.getBid())).collect(Collectors.toList());
         return new BorrowDetail(user,bookList);
     }
-    @GetMapping("/{uid}")
-    public BorrowDetail getBorrowByUid2(@PathVariable Long uid){
-        User user = template.getForObject("http://userservice/user/" + uid,User.class);
-        List<Borrow> list = borrowService.getUserBorrow(uid);
-        List<Book> bookList = list.stream().map(b -> template.getForObject("http://bookservice/book/"+b.getBid(),Book.class)).collect(Collectors.toList());
-        return new BorrowDetail(user,bookList);
-    }
+//    @GetMapping("/{uid}")
+//    public BorrowDetail getBorrowByUid2(@PathVariable Long uid){
+//        User user = template.getForObject("http://userservice/user/" + uid,User.class);
+//        List<Borrow> list = borrowService.getUserBorrow(uid);
+//        List<Book> bookList = list.stream().map(b -> template.getForObject("http://bookservice/book/"+b.getBid(),Book.class)).collect(Collectors.toList());
+//        return new BorrowDetail(user,bookList);
+//    }
 }
