@@ -628,3 +628,361 @@
 
 2023-07-16 17:21:27,887 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
 
+2023-07-17 13:36:51,151 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 13:36:51,154 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 13:37:06,475 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 13:37:06,475 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 13:37:06,476 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 13:37:06,476 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,192.168.0.108:8201_true,
+
+2023-07-17 13:37:08,797 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 13:37:09,866 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 13:37:09,866 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8101_true,
+
+2023-07-17 13:37:11,122 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 13:37:12,860 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 14:43:36,386 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:43:36,386 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 14:43:51,864 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:43:51,864 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 14:44:44,115 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:44:44,115 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 14:44:59,104 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:44:59,104 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 14:47:08,748 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:47:08,748 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 14:47:17,229 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:47:17,229 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 14:49:32,929 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:49:32,929 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 14:49:47,547 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:49:47,547 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 14:50:37,967 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:50:37,967 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 14:50:51,213 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 14:50:51,213 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 15:06:14,528 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:06:14,528 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 15:06:18,164 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:06:18,164 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 15:06:18,671 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 15:06:19,680 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 15:06:20,944 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 15:06:28,512 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:06:28,512 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 15:06:33,165 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:06:33,165 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 15:06:33,283 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 15:06:38,050 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 15:06:41,626 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 15:10:16,365 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:10:16,365 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 15:10:28,307 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:10:28,307 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 15:19:00,850 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:19:00,850 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 15:19:15,297 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:19:15,297 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 15:19:43,174 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:19:43,174 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 15:19:54,832 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:19:54,832 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 15:30:46,796 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:30:46,796 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 
+
+2023-07-17 15:30:55,916 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:30:55,916 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8101_true,
+
+2023-07-17 15:41:47,462 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:41:47,462 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 15:41:48,788 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 15:41:49,800 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 15:41:51,060 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 15:41:59,737 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:41:59,737 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 15:42:03,385 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 15:42:08,156 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 15:42:11,736 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 15:50:39,930 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:50:39,930 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 15:50:40,713 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 15:50:41,720 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 15:50:42,976 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 15:50:53,472 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:50:53,472 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 15:50:55,316 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 15:51:00,086 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 15:51:03,664 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 15:53:17,982 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:53:17,982 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 15:53:18,564 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 15:53:19,573 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 15:53:20,830 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 15:53:31,438 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 15:53:31,438 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 15:53:33,161 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 15:53:37,926 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 15:53:41,504 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 16:14:22,252 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:14:22,252 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 16:14:23,330 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 16:14:24,337 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 16:14:25,591 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 16:14:37,103 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:14:37,103 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 16:14:37,933 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 16:14:42,710 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 16:14:46,292 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 16:17:25,160 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8102:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:17:25,160 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8101_true,192.168.0.108:8102_true,
+
+2023-07-17 16:27:38,883 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:27:38,883 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 16:27:40,212 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 16:27:41,220 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 16:27:42,474 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 16:27:51,298 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:27:51,298 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 16:27:54,827 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 16:27:59,608 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 16:28:03,186 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 16:57:42,485 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:57:42,485 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 16:57:43,926 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 16:57:44,930 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 16:57:46,186 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 16:57:57,333 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 16:57:57,333 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 16:57:58,550 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 16:58:03,317 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 16:58:06,899 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 17:05:03,545 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8102:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:03,545 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8101_true,
+
+2023-07-17 17:05:03,613 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:03,613 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 
+
+2023-07-17 17:05:03,656 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:03,656 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 17:05:03,660 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:03,660 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 
+
+2023-07-17 17:05:04,921 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 17:05:05,933 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 17:05:07,196 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 17:05:14,914 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:14,914 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 17:05:15,713 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 17:05:17,296 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8102:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:17,296 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8102_true,
+
+2023-07-17 17:05:19,539 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 17:05:20,604 INFO DEFAULT_GROUP@@bookservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8301:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:20,604 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@bookservice, ips: 192.168.0.108:8301_true,
+
+2023-07-17 17:05:21,727 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:05:21,727 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8101_true,192.168.0.108:8102_true,
+
+2023-07-17 17:05:22,407 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 17:06:21,128 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:06:21,128 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8102_true,
+
+2023-07-17 17:06:29,778 INFO DEFAULT_GROUP@@userservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8101:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:06:29,778 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@userservice, ips: 192.168.0.108:8101_true,192.168.0.108:8102_true,
+
+2023-07-17 17:06:50,881 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:06:50,881 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 17:06:51,588 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 17:06:52,595 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 17:06:53,845 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 17:07:02,765 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:07:02,765 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 17:07:06,218 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 17:07:10,986 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 17:07:14,563 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 17:07:39,092 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:07:39,092 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 17:07:39,605 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 17:07:40,611 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 17:07:41,868 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 17:07:53,057 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:07:53,057 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 17:07:54,226 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 17:07:59,004 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 17:08:02,585 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+
+2023-07-17 17:12:07,808 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:12:07,808 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_true,
+
+2023-07-17 17:12:09,274 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:timeout
+
+2023-07-17 17:12:10,281 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-DISABLED} pre-invalid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:timeout
+
+2023-07-17 17:12:11,540 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-DISABLED} invalid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:timeout
+
+2023-07-17 17:12:19,916 INFO DEFAULT_GROUP@@borrowservice {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.108:8201:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-07-17 17:12:19,916 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@borrowservice, ips: 192.168.0.108:8201_false,192.168.0.108:8201_true,
+
+2023-07-17 17:12:20,066 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 1, msg: tcp:ok+
+
+2023-07-17 17:12:23,882 INFO serviceName: DEFAULT_GROUP@@borrowservice {OTHER} {IP-ENABLED} pre-valid: 192.168.0.108:8201@DEFAULT in 2, msg: tcp:ok+
+
+2023-07-17 17:12:26,754 INFO serviceName: DEFAULT_GROUP@@borrowservice {POS} {IP-ENABLED} valid: 192.168.0.108:8201@DEFAULT, region: unknown, msg: tcp:ok+
+

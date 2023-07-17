@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sentinel" />
+        <module name="auth-service" />
         <module name="user-service" />
         <module name="book-service" />
         <module name="commons-entity" />
@@ -20,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service" options="-parameters" />
       <module name="book-service" options="-parameters" />
       <module name="borrow-service" options="-parameters" />
       <module name="commons-entity" options="-parameters" />

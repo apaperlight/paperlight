@@ -92,3 +92,53 @@
 
 2023-07-16 10:24:34,689 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@userservice
 
+2023-07-17 13:36:06,259 INFO raft peers changed: [Member{ip='192.168.0.108', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2023-07-17 13:36:06,270 INFO initializing Raft sub-system
+
+2023-07-17 13:36:06,308 INFO finish loading all datums, size: 1 cost 38 ms.
+
+2023-07-17 13:36:06,309 INFO cache loaded, datum count: 1, current term: 0
+
+2023-07-17 13:36:06,309 INFO finish to load data from disk, cost: 39 ms.
+
+2023-07-17 13:36:06,311 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-17 13:36:06,555 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-17 13:36:06,563 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-17 13:36:10,838 INFO leader timeout, start voting,leader: {"ip":"192.168.0.108:8848","term":0,"leaderDueMs":19090,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+
+2023-07-17 13:36:11,258 WARN start to close old raft protocol!!!
+
+2023-07-17 13:36:11,258 WARN stop old raft protocol task for notifier
+
+2023-07-17 13:36:11,258 WARN stop old raft protocol task for master task
+
+2023-07-17 13:36:11,258 WARN stop old raft protocol task for heartbeat task
+
+2023-07-17 13:36:11,258 WARN clean old cache datum for old raft
+
+2023-07-17 13:36:11,258 WARN start to close old raft protocol!!!
+
+2023-07-17 13:36:11,258 WARN stop old raft protocol task for notifier
+
+2023-07-17 13:36:11,258 WARN stop old raft protocol task for master task
+
+2023-07-17 13:36:11,258 WARN stop old raft protocol task for heartbeat task
+
+2023-07-17 13:36:11,258 WARN clean old cache datum for old raft
+
+2023-07-17 13:36:11,258 WARN start to move old raft protocol metadata
+
+2023-07-17 13:36:11,259 WARN start to move old raft protocol metadata
+
+2023-07-17 13:36:11,259 INFO raft peers changed: [Member{ip='192.168.0.108', port=8848, state=UP, extendInfo={lastRefreshTime=1689572171259, raftPort=7848, version=1.4.3}}]
+
+2023-07-17 13:36:51,094 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@bookservice
+
+2023-07-17 13:37:06,474 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@borrowservice
+
+2023-07-17 13:37:09,865 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@userservice
+

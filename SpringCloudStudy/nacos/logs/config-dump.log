@@ -24,3 +24,9 @@
 
 2023-07-16 11:33:47,323 INFO [dump-task] add task. groupKey=bookservice-dev.yml+DEFAULT_GROUP, taskKey=bookservice-dev.yml+DEFAULT_GROUP++false+null
 
+2023-07-17 13:36:06,818 INFO [dump-all-ok] mysql-dev.yml+DEFAULT_GROUP, 1689477909816, length=159, md5=b3ca311f8485ce95f938bbd985a4daad
+
+2023-07-17 13:36:06,818 INFO [dump-all-ok] borrowservice-dev.yml+DEFAULT_GROUP, 1689476849666, length=203, md5=6c4175d3955192debf05d4c5a745e828
+
+2023-07-17 13:36:06,818 INFO [dump-all-ok] bookservice-dev.yml+DEFAULT_GROUP, 1689478427319, length=209, md5=121de349ee06c4dd556cb3ed33f7889a
+

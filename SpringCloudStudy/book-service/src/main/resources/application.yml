@@ -8,3 +8,11 @@ spring:
     sentinel:
       transport:
         dashboard: localhost:8900
+security:
+  oauth2:
+    client:
+      client-id: web
+      client-secret: 654321
+    resource:
+      token-info-uri: http://localhost:8888/sso/oauth/check_token
+

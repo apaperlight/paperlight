@@ -354,3 +354,663 @@
 
 2023-07-16 17:19:14,200 INFO [capacityManagement] end correct usage, cost: 0s
 
+2023-07-17 13:34:22,767 INFO The server IP list of Nacos is []
+
+2023-07-17 13:34:22,772 INFO Starting Nacos v1.4.3 on paper with PID 32452 (C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\target\nacos-server.jar started by 94597 in C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy)
+
+2023-07-17 13:34:22,772 INFO No active profile set, falling back to default profiles: default
+
+2023-07-17 13:34:23,768 INFO Nacos is starting...
+
+2023-07-17 13:34:24,571 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@45385f75' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-17 13:34:24,574 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-17 13:34:24,782 INFO Nacos is starting...
+
+2023-07-17 13:34:24,872 INFO Tomcat initialized with port(s): 8848 (http)
+
+2023-07-17 13:34:24,881 INFO Initializing ProtocolHandler ["http-nio-8848"]
+
+2023-07-17 13:34:24,887 INFO Starting service [Tomcat]
+
+2023-07-17 13:34:24,887 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2023-07-17 13:34:25,063 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2023-07-17 13:34:25,089 INFO Initializing Spring embedded WebApplicationContext
+
+2023-07-17 13:34:25,089 INFO Root WebApplicationContext: initialization completed in 2250 ms
+
+2023-07-17 13:34:25,292 ERROR Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'authFilterRegistration' defined in class path resource [com/alibaba/nacos/core/auth/AuthConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+
+2023-07-17 13:34:25,319 INFO Stopping service [Tomcat]
+
+2023-07-17 13:34:25,328 WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+
+2023-07-17 13:34:25,330 INFO Nacos Log files: C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\logs
+
+2023-07-17 13:34:25,331 INFO Nacos Log files: C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\conf
+
+2023-07-17 13:34:25,331 INFO Nacos Log files: C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\data
+
+2023-07-17 13:34:25,332 ERROR Startup errors : {}
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.alibaba.nacos.Nacos.main(Nacos.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authFilterRegistration' defined in class path resource [com/alibaba/nacos/core/auth/AuthConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5128)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751.authFilter(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751.CGLIB$authFilterRegistration$1(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751$$FastClassBySpringCGLIB$$d4562fb1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751.authFilterRegistration(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 85 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 98 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 120 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 133 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1761)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 146 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:58)
+	at com.alibaba.nacos.config.server.service.repository.extrnal.ExternalStoragePersistServiceImpl.init(ExternalStoragePersistServiceImpl.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 158 common frames omitted
+Caused by: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at com.alibaba.nacos.config.server.service.datasource.ExternalDataSourceServiceImpl.init(ExternalDataSourceServiceImpl.java:109)
+	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:53)
+	... 166 common frames omitted
+2023-07-17 13:34:25,355 WARN [WatchFileCenter] start close
+
+2023-07-17 13:34:25,355 WARN [WatchFileCenter] start to shutdown this watcher which is watch : C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\conf
+
+2023-07-17 13:34:25,356 WARN [WatchFileCenter] already closed
+
+2023-07-17 13:34:25,356 WARN [NotifyCenter] Start destroying Publisher
+
+2023-07-17 13:34:25,356 WARN [NotifyCenter] Destruction of the end
+
+2023-07-17 13:34:25,356 ERROR Nacos failed to start, please see C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\logs\nacos.log for more details.
+
+2023-07-17 13:34:25,364 INFO 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+
+2023-07-17 13:34:25,366 ERROR Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.alibaba.nacos.Nacos.main(Nacos.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:467)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 16 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authFilterRegistration' defined in class path resource [com/alibaba/nacos/core/auth/AuthConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5128)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:843)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.FilterRegistrationBean]: Factory method 'authFilterRegistration' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authFilter': Unsatisfied dependency expressed through field 'authManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751.authFilter(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig.authFilterRegistration(AuthConfig.java:34)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751.CGLIB$authFilterRegistration$1(<generated>)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751$$FastClassBySpringCGLIB$$d4562fb1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.alibaba.nacos.core.auth.AuthConfig$$EnhancerBySpringCGLIB$$2c134751.authFilterRegistration(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthManager': Unsatisfied dependency expressed through field 'authenticationManager'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 85 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosAuthConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1158)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:554)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 98 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nacosUserDetailsServiceImpl': Unsatisfied dependency expressed through field 'userPersistService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 120 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalUserPersistServiceImpl': Unsatisfied dependency expressed through field 'persistService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:598)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1402)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 133 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'externalStoragePersistServiceImpl': Invocation of init method failed; nested exception is java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1761)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:514)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:319)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1196)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:595)
+	... 146 common frames omitted
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:58)
+	at com.alibaba.nacos.config.server.service.repository.extrnal.ExternalStoragePersistServiceImpl.init(ExternalStoragePersistServiceImpl.java:138)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:307)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:136)
+	... 158 common frames omitted
+Caused by: java.lang.RuntimeException: [db-load-error]load jdbc.properties error
+	at com.alibaba.nacos.config.server.service.datasource.ExternalDataSourceServiceImpl.init(ExternalDataSourceServiceImpl.java:109)
+	at com.alibaba.nacos.config.server.service.datasource.DynamicDataSource.getDataSource(DynamicDataSource.java:53)
+	... 166 common frames omitted
+2023-07-17 13:36:03,879 INFO Starting Nacos v1.4.3 on paper with PID 38320 (C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos\target\nacos-server.jar started by 94597 in C:\Users\94597\Desktop\项目\paperlight\SpringCloudStudy\nacos)
+
+2023-07-17 13:36:03,879 INFO The following profiles are active: standalone
+
+2023-07-17 13:36:04,886 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@9816741' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-17 13:36:04,889 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2023-07-17 13:36:05,177 INFO Tomcat initialized with port(s): 8848 (http)
+
+2023-07-17 13:36:05,194 INFO Starting service [Tomcat]
+
+2023-07-17 13:36:05,194 INFO Starting Servlet engine: [Apache Tomcat/9.0.38]
+
+2023-07-17 13:36:05,365 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2023-07-17 13:36:05,391 INFO Initializing Spring embedded WebApplicationContext
+
+2023-07-17 13:36:05,391 INFO Root WebApplicationContext: initialization completed in 1484 ms
+
+2023-07-17 13:36:05,622 INFO HikariPool-1 - Starting...
+
+2023-07-17 13:36:05,623 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2023-07-17 13:36:05,825 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2023-07-17 13:36:05,826 INFO HikariPool-1 - Start completed.
+
+2023-07-17 13:36:06,227 INFO Nacos-related cluster resource initialization
+
+2023-07-17 13:36:06,233 INFO The cluster resource is initialized
+
+2023-07-17 13:36:06,472 INFO Reflections took 17 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2023-07-17 13:36:06,485 INFO Reflections took 3 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2023-07-17 13:36:06,492 INFO Reflections took 2 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2023-07-17 13:36:06,508 INFO Reflections took 1 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2023-07-17 13:36:06,971 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2023-07-17 13:36:07,053 INFO Adding welcome page: class path resource [static/index.html]
+
+2023-07-17 13:36:07,240 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2023-07-17 13:36:07,260 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c1b9e4b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1536602f, org.springframework.security.web.header.HeaderWriterFilter@423e4cbb, org.springframework.security.web.csrf.CsrfFilter@7e242b4d, org.springframework.security.web.authentication.logout.LogoutFilter@743cb8e0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a1edad4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fcbe147, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@757d6814, org.springframework.security.web.session.SessionManagementFilter@43b4fe19, org.springframework.security.web.access.ExceptionTranslationFilter@592e843a]
+
+2023-07-17 13:36:07,312 INFO Initializing ExecutorService 'taskScheduler'
+
+2023-07-17 13:36:07,324 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2023-07-17 13:36:07,374 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2023-07-17 13:36:07,376 INFO Started Nacos in 4.072 seconds (JVM running for 4.637)
+
+2023-07-17 13:36:07,376 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2023-07-17 13:36:33,648 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2023-07-17 13:36:33,648 INFO Initializing Servlet 'dispatcherServlet'
+
+2023-07-17 13:36:33,653 INFO Completed initialization in 5 ms
+
+2023-07-17 13:46:06,586 INFO [capacityManagement] start correct usage
+
+2023-07-17 13:46:06,596 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 13:46:06,835 WARN clearConfigHistory start
+
+2023-07-17 13:56:06,602 INFO [capacityManagement] start correct usage
+
+2023-07-17 13:56:06,602 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 13:56:06,851 WARN clearConfigHistory start
+
+2023-07-17 14:06:06,617 INFO [capacityManagement] start correct usage
+
+2023-07-17 14:06:06,618 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 14:06:06,865 WARN clearConfigHistory start
+
+2023-07-17 14:16:06,627 INFO [capacityManagement] start correct usage
+
+2023-07-17 14:16:06,628 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 14:16:06,875 WARN clearConfigHistory start
+
+2023-07-17 14:26:06,639 INFO [capacityManagement] start correct usage
+
+2023-07-17 14:26:06,640 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 14:26:06,887 WARN clearConfigHistory start
+
+2023-07-17 14:36:06,646 INFO [capacityManagement] start correct usage
+
+2023-07-17 14:36:06,646 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 14:36:06,893 WARN clearConfigHistory start
+
+2023-07-17 14:46:06,661 INFO [capacityManagement] start correct usage
+
+2023-07-17 14:46:06,662 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 14:46:06,894 WARN clearConfigHistory start
+
+2023-07-17 14:56:06,670 INFO [capacityManagement] start correct usage
+
+2023-07-17 14:56:06,670 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 14:56:06,903 WARN clearConfigHistory start
+
+2023-07-17 15:06:06,683 INFO [capacityManagement] start correct usage
+
+2023-07-17 15:06:06,684 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 15:06:06,916 WARN clearConfigHistory start
+
+2023-07-17 15:16:06,687 INFO [capacityManagement] start correct usage
+
+2023-07-17 15:16:06,687 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 15:16:06,922 WARN clearConfigHistory start
+
+2023-07-17 15:26:06,702 INFO [capacityManagement] start correct usage
+
+2023-07-17 15:26:06,702 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 15:26:06,935 WARN clearConfigHistory start
+
+2023-07-17 15:36:06,718 INFO [capacityManagement] start correct usage
+
+2023-07-17 15:36:06,718 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 15:36:06,949 WARN clearConfigHistory start
+
+2023-07-17 15:46:06,722 INFO [capacityManagement] start correct usage
+
+2023-07-17 15:46:06,723 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 15:46:06,956 WARN clearConfigHistory start
+
+2023-07-17 15:56:06,727 INFO [capacityManagement] start correct usage
+
+2023-07-17 15:56:06,727 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 15:56:06,959 WARN clearConfigHistory start
+
+2023-07-17 16:06:06,743 INFO [capacityManagement] start correct usage
+
+2023-07-17 16:06:06,743 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 16:06:06,960 WARN clearConfigHistory start
+
+2023-07-17 16:16:06,757 INFO [capacityManagement] start correct usage
+
+2023-07-17 16:16:06,758 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 16:16:06,973 WARN clearConfigHistory start
+
+2023-07-17 16:26:06,765 INFO [capacityManagement] start correct usage
+
+2023-07-17 16:26:06,765 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 16:26:06,983 WARN clearConfigHistory start
+
+2023-07-17 16:36:06,776 INFO [capacityManagement] start correct usage
+
+2023-07-17 16:36:06,776 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 16:36:06,992 WARN clearConfigHistory start
+
+2023-07-17 16:46:06,782 INFO [capacityManagement] start correct usage
+
+2023-07-17 16:46:06,782 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 16:46:06,999 WARN clearConfigHistory start
+
+2023-07-17 16:56:06,790 INFO [capacityManagement] start correct usage
+
+2023-07-17 16:56:06,790 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 16:56:07,007 WARN clearConfigHistory start
+
+2023-07-17 17:06:06,805 INFO [capacityManagement] start correct usage
+
+2023-07-17 17:06:06,805 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 17:06:07,022 WARN clearConfigHistory start
+
+2023-07-17 17:16:06,809 INFO [capacityManagement] start correct usage
+
+2023-07-17 17:16:06,809 INFO [capacityManagement] end correct usage, cost: 0s
+
+2023-07-17 17:16:07,027 WARN clearConfigHistory start
+
