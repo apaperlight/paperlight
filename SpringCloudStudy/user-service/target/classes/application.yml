@@ -1,0 +1,21 @@
+server:
+  port: 8101
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloudstudy
+    username: root
+    password: 123456
+  application:
+    name: userservice
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8900
+  session:
+    store-type: redis
+  redis:
+    host: localhost

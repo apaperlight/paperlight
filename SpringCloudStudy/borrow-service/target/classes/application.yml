@@ -1,0 +1,20 @@
+server:
+  port: 8201
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        ephemeral: true
+#        cluster-name: Chongqing
+    loadbalancer:
+      nacos:
+        enabled: true
+    sentinel:
+      transport:
+        dashboard: localhost:8900
+  #下面是关于redis的配置，使用这种方式无法解决服务间的调用问题。
+  redis:
+    host: localhost
+  session:
+    store-type: redis
